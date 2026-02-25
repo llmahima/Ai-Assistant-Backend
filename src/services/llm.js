@@ -5,14 +5,14 @@ let client = null;
 function getClient() {
   if (!client) {
     client = new OpenAI({
-      apiKey: process.env.OPENAI_API_KEY,
-      baseURL: process.env.OPENAI_BASE_URL || 'https://api.openai.com/v1',
+      apiKey: process.env.GROQ_API_KEY,
+      baseURL: 'https://api.groq.com/openai/v1',
     });
   }
   return client;
 }
 
-const getModel = () => process.env.OPENAI_MODEL || 'gpt-4o-mini';
+const getModel = () => process.env.GROQ_MODEL || 'llama-3.3-70b-versatile';
 
 function buildSystemPrompt(docs) {
   const docsText = docs
@@ -22,6 +22,8 @@ function buildSystemPrompt(docs) {
   return `You are a helpful support assistant. Answer ONLY based on the provided documentation.
 
 If the question cannot be answered from the docs, respond exactly: Sorry, I don't have information about that.
+
+Do not make up information. Do not guess. Only use what is in the documentation below.
 
 --- Documentation ---
 
@@ -56,7 +58,7 @@ async function generateResponse(userMessage, chatHistory, docs) {
     console.error('LLM service error:', error.message);
 
     if (error.status === 401) {
-      throw new Error('Invalid API key. Please check your OPENAI_API_KEY.');
+      throw new Error('Invalid API key. Please check your GROQ_API_KEY.');
     }
     if (error.status === 429) {
       throw new Error('Rate limit exceeded. Please try again later.');
