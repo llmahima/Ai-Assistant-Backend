@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Reset Password",
+    "content": "Users can reset their password by navigating to Settings > Security > Reset Password. Click the 'Reset Password' button, enter your current password, then enter and confirm your new password. Password must be at least 8 characters with one uppercase letter and one number."
+  },
+  {
+    "title": "Refund Policy",
+    "content": "Refunds are allowed within 7 days of purchase. To request a refund, go to Orders > Select Order > Request Refund. Refunds are processed within 3-5 business days. Digital products are non-refundable after download."
+  },
+  {
+    "title": "Account Setup",
+    "content": "To create an account, click 'Sign Up' on the homepage. Enter your email, create a password, and verify your email address. You can also sign up using Google or GitHub OAuth. After verification, complete your profile by adding your name and preferences."
+  },
+  {
+    "title": "Billing & Subscription",
+    "content": "We offer three plans: Free, Pro ($9.99/month), and Enterprise ($29.99/month). You can upgrade or downgrade anytime from Settings > Billing. Pro includes priority support and advanced features. Enterprise adds team management and API access."
+  },
+  {
+    "title": "Contact Support",
+    "content": "You can reach our support team via email at support@example.com or through the in-app chat. Support hours are Monday to Friday, 9 AM to 6 PM EST. Enterprise customers have access to 24/7 priority support."
+  },
+  {
+    "title": "Data Privacy",
+    "content": "We take data privacy seriously. All data is encrypted at rest and in transit. You can export your data anytime from Settings > Privacy > Export Data. To delete your account and all associated data, go to Settings > Privacy > Delete Account. Deletion is permanent and irreversible."
+  },
+  {
+    "title": "Two-Factor Authentication",
+    "content": "Enable 2FA from Settings > Security > Two-Factor Authentication. We support authenticator apps (Google Authenticator, Authy) and SMS verification. 2FA adds an extra layer of security to your account. Backup codes are provided during setup."
+  },
+  {
+    "title": "API Documentation",
+    "content": "API access is available on Enterprise plans. Generate your API key from Settings > Developer > API Keys. Rate limits are 1000 requests per minute. Full API documentation is available at docs.example.com/api. All endpoints require Bearer token authentication."
+  },
+  {
+    "title": "Team Management",
+    "content": "Enterprise users can manage teams from Settings > Team. You can invite members by email, assign roles (Admin, Editor, Viewer), and create departments. Admins can manage billing, Editors can create content, and Viewers have read-only access."
+  },
+  {
+    "title": "Notifications",
+    "content": "Manage your notification preferences from Settings > Notifications. You can choose to receive notifications via email, push notifications, or in-app. Set quiet hours to pause notifications during specific times. Critical security alerts are always sent regardless of preferences."
+  }
+]
